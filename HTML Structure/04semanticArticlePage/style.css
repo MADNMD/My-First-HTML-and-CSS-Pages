@@ -1,0 +1,27 @@
+body{
+    border: 1px solid #4c7658;
+    margin: 15px 10px;
+    background-color: #e4e978;
+}
+.heading{
+    border: 1px solid #4c7658;
+    margin: 15px 10px;
+    padding: 5px 15px;
+    background-color: #f2f4c0;
+}
+section .first-article{
+    border: 1px solid #4c7658;
+    font-style: italic;
+    color: #4c7658;
+    background-color: #f2f4c0;
+    margin:  15px 10px;
+    padding: 5px 10px;
+}
+section .second-article{
+    border: 1px solid #4c7658;
+    font-style: italic;
+    color: #4c7658;
+    background-color: #f2f4c0;
+    margin: 15px 10px;
+    padding: 5px 10px;
+}
