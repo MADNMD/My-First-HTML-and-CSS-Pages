@@ -1,0 +1,13 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    padding: 16px;
+}
+table thead tr th{
+    background-color: lightblue;
+}
+table tbody tr td{
+    width: 144px;
+    height: 32px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+}
