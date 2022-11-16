@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif&display=swap');
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    /*задавам какъв да бъде шрифта*/
+    font-size: 16px;
+    /*  размера на текста*/
+    max-width: 1500px;
+    /*колко да се разпъва страницата*/
+    margin: 0 auto;
+    /*margin на цялото боди отгоре и отдолу 0 ,отстрани ауто или центрирай бодите да бъде по средата*/
+}
+
+.navigation {
+    padding: 0 20px;
+    /*отстоянието на текста отгоре и отдолу ще е 0 а от ляво и дясно по 20px*/
+}
+
+.navigation p {
+    display: inline-block;
+    /*заеми толко място на ред колкото е нужно  */
+    font-size: 22px;
+    /*размер на текста*/
+    width: 950px;
+    /* доближавам целия ред на навигацията в десния край на екрана */
+}
+
+.navigation p span {
+    color: #50b9e1;
+    /*задаваме цявт на текста който е в span тага*/
+}
+
+nav {
+    display: inline-block;
+    /*заеми толко място на ред колкото е нужно  */
+    list-style: none;
+    /*маха кръгчетата, квадрачетата пред лист айтемите*/
+}
+
+li {
+    display: inline-block;
+    /*заеми толко място на ред колкото е нужно  */
+}
+
+li:not(:last-child) {
+    /*всичките li items с изкючение на посления*/
+    padding-right: 10px;
+    /*растояние между думите в навигацията*/
+}
+
+a {
+    text-decoration: none;
+    /*маха чертата която подчертава думите*/
+    color: black;
+    /*задава какъв да е цвета на линковете*/
+}
+
+nav i {
+    border: 1px solid black;
+    /*слага рамки на сошал иконите*/
+    border-radius: 50%;
+    /*това прави рамката на сошал иконите кръгла */
+    padding: 5px;
+    /*тук задаваме растояние между иконите и рамката*/
+}
+
+body>header>section.navigation>nav>ul>li:nth-child(5) {
+    /*в браузъра десен бутон inspect после copy после copy selector взима пътя който искаме*/
+    padding-right: 5px;
+    /*разстояните между 5-тия лист айтем и иконите*/
+}
+
+ul {
+    padding: 0;
+    /*ul има автоматично зададен падинг и така го махаме*/
+}
+
+a:hover {
+    /*с hover като мине през линка и се оцветява от зададения цвят*/
+    color: #50b9e1;
+    cursor: pointer;
+    /*като сложиш мишката върху линка тя става на ръчичка*/
+}
+
+/*site-header*/
+
+.site-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(/Images/kids_main.jpg) no-repeat center;
+    /*ще имеме linear-gradient  върху снимката и ще преминава от по светло към по тъмноъо, с URL добавяме снимкта, с no-repeat ако име по голямо пространсво за снимката да не се повтаря а да се разпъне и да се центрира,*/
+    background-size: cover;
+    /*нека да покрие пространството на което е разположена*/
+}
+
+.site-header h1 {
+    font-size: 66px;
+    color: white;
+    width: 35%;
+    /*правим текста в снимката да се свие на два реда*/
+    margin: 0;
+    /*премахваме отстоянието над и под снимката*/
+    padding: 400px 0 200px 100px;
+    /*разстояние на покажем снимката 200 отгоре отдясно 0 да заеме толкова колкото му е нужно от долут 80px и от ляво 100px*/
+}
+
+.site-header button {
+    font-size: 26px;
+    background: transparent;
+    /*фона на бутона ще бъде прозрачен*/
+    border: 2px solid white;
+    color: white;
+    padding: 10px 15px;
+    /*правим растояние между буквите и рамката в бутона*/
+    margin: 0 0 100px 100px;
+    /*външното отстояние от неговия бордер към краищата на снимката в която е разположен */
+}
+
+.site-header button:hover {
+    background: #50b9e1;
+    border: 2px solid #50b9e1;
+    cursor: pointer;
+}
+
+/* main - section - welcome*/
+
+.welcome {
+    color: #5a7c8a;
+    width: 60%;
+    /*колко да бъде широк текста*/
+    margin: 0 auto;
+    /*центрирай тази секция да бъде по средата*/
+    padding: 20px 0;
+    /*20 пиксела от горе и долу и 0 за ляво и дясно*/
+}
+
+h2 {
+    text-align: center;
+    font-family: 'PT Serif';
+    font-size: 32px;
+    font-style: italic;
+    letter-spacing: 2px;
+    /*разстояните между самите букви*/
+}
+
+.welcome p {
+    text-align: center;
+}
+
+.welcome p a {
+    color: #50b9e1;
+}
+
+
+/*main - section - our-offerings*/
+
+.our-offerings {
+    background-color: #50b9e1;
+    font-family: 'PT serif', serif;
+    color: white;
+    padding: 20px 40px;
+    /*с 2-те пиксела местим от горе и долу ас 40-те от ляво и дясно*/
+}
+
+.our-offerings img {
+    width: 70px;
+    /*картинките са прекалено големи и тук ги намаляме*/
+}
+
+.our-offerings li {
+    width: 30%;
+    /*ширината на целия лист айтем с картинка и текст се свива за да може да са няколко на един ред*/
+    text-align: center;
+    padding: 20px 22px;
+    /*местим картинките с текста нагоре и надолу и на ляво и на дясно*/
+}
+
+.our-offerings h2 {
+    color: white;
+}
+
+/* main - section - camps*/
+
+.camps {
+    color: #5a7c8a;
+    padding: 20px 0;
+    /* 20 отстояние от другите секции от горе и долу, от ляво и дясно да е залепена*/
+}
+
+body>main>section.camps>p {
+    /*това е второто дете в класа и да не предаде стила на другите*/
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    /*с margin 0 auto текста идва по средата*/
+    padding-bottom: 30px;
+    /*да може да премести снимките по надолу*/
+
+}
+
+.camps img {
+    width: 400px;
+    height: 250px;
+    /*нагласям резмерите на снимките*/
+}
+
+.camps li {
+    width: 400px;
+    /*нагласяме снимките да бъдат на един ред*/
+}
+
+.camps li:not(:last-child) {
+    /*на всички li тагове с изключение на последното защото на него не искаме да му слагаме padding rigth*/
+    padding-right: 144px;
+}
+
+.info div {
+    display: inline-block;
+    /*div таговете заемат толкова място колко и е нужно и застават на един ред*/
+}
+
+.info div p,
+.info div h3 {
+    margin: 0;
+    padding: 0;
+    /*махаме margina и paddinga за да можем да залепим заглавието и параграфа един за друг*/
+}
+
+.info div:nth-child(1) {
+    width: 339px;
+    /*местим сумата от 35$ в долния десен ъгъл*/
+}
+
+.info div:nth-child(2) {
+    background: #50b9e1;
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.info {
+    border-bottom: 2px solid #5a7c8a;
+    /*така правим тънката черта която е под цената от 35$ и снимката*/
+    padding-bottom: 10px;
+    /*така прави тънката черта под цената и снимката да слезе малко надолъ*/
+}
+
+.more-info button {
+    font-size: 16px;
+    color: #50b9e1;
+    background: transparent;
+    border: 2px solid #50b9e1;
+    padding: 5px 10px;
+
+}
+
+.more-info button:hover {
+    cursor: pointer;
+    background: #50b9e1;
+    color: white;
+}
+
+/* footer */
+
+footer {
+    background: #50b9e1;
+    color: #5a7c8a;
+    padding: 0 40px;
+    /*от горе и долу е нула 40-те пиксела го избутват да не е залепен*/
+}
+
+footer p {
+    display: inline-block;
+    width: 90%;
+    /*отдалечаваме сошал инконите от текста с процент*/
+}
+
+footer ul {
+    display: inline-block;
+}
+
+footer ul a {
+    color: #5a7c8a;
+}
+
+footer ul a i {
+    border: 1px solid #5a7c8a;
+    border-radius: 50%;
+    padding: 5px;
+}
